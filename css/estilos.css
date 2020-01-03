@@ -8,3 +8,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
+header{
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+header img {
+  margin-top: 12px;
+}
+/*criei esse container por não saber a resolução da tela do usuário no desktop*/
+.container{
+  width: 1200px;
+  /*sup e in =0 e rigth and left auto*/
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
