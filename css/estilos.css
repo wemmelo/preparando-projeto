@@ -16,7 +16,7 @@ header img {
 }
 /*criei esse container por não saber a resolução da tela do usuário no desktop*/
 .container{
-  width: 1200px;
+  width: 100%;
   /*sup e inf=0 e rigth and left auto*/
   margin: 0 auto;
   padding-left: 15px;
@@ -36,10 +36,18 @@ acrescentando outros elementos abaixo*/
 
 article{
   border:1px solid #95a4a5;
-  width: 370px;
   padding: 10px;
-  float: left;
-  margin-right: 30px;
+ 
+}
+/*o media queries só será aplicado quando a expressão entre () for verdadeira*/
+/*esses blocos de media queries são chamados de breakpoint*/
+/*a partir de 800px pra cima aplica o código*/
+@media (min-width: 800px){
+  article{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+  }
 }
 article>h2{
   background-color: #95a4a5 ;
