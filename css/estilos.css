@@ -1,0 +1,28 @@
+.texto {
+    font-size: 2em;
+  }
+  
+  .texto h1 {
+    font-size: 3em; /* 3x o tamanho do pai */
+  }
+  
+  .texto p {
+    padding: 0.5em;
+    margin-right: 3em;
+    border: 0.5em solid black;
+  
+    font-size: 2em;
+  }
+  
+  .texto p span {
+    color: green;
+    font-size: 0.5em;
+  }
+   
+  .comentarios {       
+    font-size: 0.5rem; /* 0.5x o tamanho de fonte padrão do documento */
+  }
+  
+  .comentarios p {
+    font-size: 2em;
+  }
