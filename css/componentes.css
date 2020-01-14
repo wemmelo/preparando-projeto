@@ -78,3 +78,53 @@
 .botao--assinar:hover, .botao--assinar:focus {
   background-color: #0e6400;
 }
+
+.botao--principal{
+  border-radius: 10px;
+
+  background-color: #004b86;
+}
+
+.botao--principal:hover, .botao--principal:focus {
+  background-color: #003b6a;
+}
+
+/*--------------------*\
+  CHAMADA
+\*--------------------*/
+.chamada{
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.chamada__titulo{
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 3.375em; /* eu quero 54px
+                      54px/16px (que é o tamanho da fonte da classe pai)=3.375*/
+  line-height: 0.9; /*altura da linha*/
+  text-shadow: 1px 1px #313131; /* eixox eixoy cor */  
+}
+
+.chamada__subtitulo{
+  margin: 60px 0; /* aumenta a distância para o paragráfo do título */
+
+  color: #fff;
+
+  font-size: 1em;
+}
+
+.chamada__acao{
+  font-size: 1em;
+}
+
+@media(min-width: 992px){ /* quando a tela passar de 992px ele aplicará as regras do bloco abaixo */
+  .chamada{
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-size: 2.2rem;
+  }
+}
