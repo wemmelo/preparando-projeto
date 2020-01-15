@@ -2,10 +2,28 @@
   PLANO
 \*--------------------*/
 .plano {
+  position: relative; /* serve apenas para servir de referência para o plano--mais-popular::after
+  para ele não utilizar a posição do bootstrap-grid */
   padding: 10px;
   border: 1px solid #95a4a5;
 
   font-size: 1.4rem; /* 14px/10px=1.4rem */ 
+}
+
+.plano--mais-popular::after {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  padding: 0 10px;
+  
+  background-color: #c20303;
+  color: #fff;
+
+  font-size: 0.7142em;
+  line-height: 2.5;
+
+  content: "MAIS POPULAR";
 }
 
 .plano__cabecalho {
@@ -133,6 +151,7 @@
   DEPOIMENTO
 \*--------------------*/
 .depoimento{
+
   font-size: 2.2rem;
 }
 
@@ -147,11 +166,24 @@
 }
 
 .depoimento > blockquote{
+  position: relative;
   margin: 0;
   padding: 0 60px;
 
   text-align: center;
   font-size: 1em;
+}
+
+.depoimento > blockquote::before{
+  position: absolute;
+  top: -0.35em; /* 62/1760.3522 */
+  left: 0;
+
+  color: #ccc;
+
+  font-size: 8em; /* 176px */ 
+
+  content: "\201c";
 }
 
 .depoimento__autor{
