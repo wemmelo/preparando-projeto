@@ -20,6 +20,9 @@
       
     </header>
 
+    <!--Utilizei aqui uma section em vez do div, pois de acordo com as espacificações
+    na section é que deve conter os headers tipo h1, h2 ..., mas funcionaria também
+    se estivesse com uma div-->
     <section class="layout-chamada"> <!--bloco de layout da chamada-->
       <div class="container">
       
@@ -36,9 +39,22 @@
       </div>
     </section>
 
-    <section class="layout-depoimentos">
-      
-    </section>
+    <div class="layout-depoimento"> <!--layout tem haver com a posição na tela-->
+      <div class="container"> <!--tem haver com o espaço reservado dentro do layout-->
+        
+        <div class="depoimento"> <!--bloco do depoimento-->
+          <blockquote><!--utilizamos essa tag para citações-->
+            Eu tinha perdido totalmente o controle da minha empresa.
+            Depois que comecei a usar o MyPilas, me sinto muito mais organizado e confiante no futuro.
+          </blockquote>
+          <div class="depoimento__autor"><!--é um elemento do bloco depoimento-->
+            <img src="imagens/joao-da-silva.jpg" width="180" height="180" alt="João da Silva">
+            <p>João da Silva</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <div id="planos" class="layout-planos"> <!--bloco de layout dos planos-->
       <div class="container">
